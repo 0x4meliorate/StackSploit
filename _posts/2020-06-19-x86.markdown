@@ -1,0 +1,7 @@
+---
+layout: post
+title: "x86 Assembly"
+date: 2020-06-19
+categories: ASM
+---
+Just an example blog, just getting everything prepared.
