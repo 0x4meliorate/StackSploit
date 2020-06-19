@@ -3,7 +3,7 @@ title: StackSploit
 email: 
 description: > # this means to ignore newlines until "baseurl:"
   Blog built upon the knowledge and progression of inspiring hackers.
-baseurl: "/StackSploit" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://0x4meliorate.github.io" # the base hostname & protocol for your site
 twitter_username: 0x4meliorate
 github_username: 0x4meliorate
