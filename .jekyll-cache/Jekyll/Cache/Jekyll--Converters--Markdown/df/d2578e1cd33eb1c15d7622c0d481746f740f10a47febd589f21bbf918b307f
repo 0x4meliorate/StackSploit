@@ -1,63 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>x86 Assembly</title>
-  <meta name="description" content="Overview   Assembly is a human readable form of machine code.">
-
-  <link rel="stylesheet" href="/StackSploit/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/StackSploit/asm/2020/06/19/x86.html">
-  <link rel="alternate" type="application/rss+xml" title="StackSploit" href="http://localhost:4000/StackSploit/feed.xml" />
-
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
-</head>
-
-
-  <body>
-
-    <div class="site-header">
-
-    <nav class="site-nav">
-        
-          
-          <a class="page-link" href="/StackSploit/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-    </nav>
-
-    <h1>
-     <span>
-      <a class="site-title" href="/StackSploit/">StackSploit</a>
-     </span>
-    </h1>
-
-
-</div>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post">
-
-  <header class="post-header">
-     <h1 class="post-title">x86 Assembly</h1>
-     <p class="post-meta">Posted on Jun 19, 2020</p>
-  </header>
-
-  <article class="post-content">
-    <h1 id="overview">Overview</h1>
+I""<h1 id="overview">Overview</h1>
 <p> </p>
 <ul>
   <li>
@@ -100,27 +41,4 @@ Instructions, Registers and the Stack. <br />
   I will complete this tomorrow. :)</li>
 </ul>
 
-
-  </article>
-
-  <div align="center">
-  	<a href="#">
-  	<i class="fa fa-arrow-circle-up fa-2x"></i>
-  	</a>
-  </div>
-
-</div>
-      </div>
-    </div>
-
-    <div class="footer" align="center">
-
-  View source code <a href=https://github.com/0x4meliorate target="_blank">Github</a><br/>
-  Contact <a href=https://twitter.com/0x4meliorate target="_blank">Twitter</a>
-
-</div>
-
-
-  </body>
-
-</html>
+:ET

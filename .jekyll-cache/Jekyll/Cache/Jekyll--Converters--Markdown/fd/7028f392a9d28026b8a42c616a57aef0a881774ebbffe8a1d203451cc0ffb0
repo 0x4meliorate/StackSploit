@@ -1,0 +1,38 @@
+I"O<h1 id="overview">Overview</h1>
+
+<ul>
+  <li>
+    <p>Assembly is a human readable form of machine code.</p>
+  </li>
+  <li>
+    <p>Assembly has 2 syntaxes: “Intel” and “AT&amp;T”.</p>
+
+    <p>The syntax “Intel” has nothing to do with ‘Intel’ the hardware manufacturer company. <br />
+The syntax “AT&amp;T” has nothing do with the American phone company. <br />
+(These are just simply the names for the 2 available syntaxes). <br />
+Another way of looking at this:</p>
+    <blockquote>
+      <p>python2 allows you to output to console using <code class="language-plaintext highlighter-rouge">print "Hello World!"</code>. <br />
+python3 allows you to output to console using <code class="language-plaintext highlighter-rouge">print("Hello World!")</code>.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>The code snippets do the exact same thing, but the syntaxes are different. <br />
+Same applies for assembly syntaxes “Intel” and “AT&amp;T”.</p>
+
+<ul>
+  <li>Every application is translated into machine code.</li>
+</ul>
+
+<p>Learning assembly will allow us to read any application. <br />
+Which will allow us to understand exactly what every application is doing. <br />
+When you know assembly, everything is open-sourced!</p>
+
+<h1 id="what-we-now-know">What we now know</h1>
+
+<ul>
+  <li></li>
+  <li>Assembly has 2 main syntaxes.</li>
+</ul>
+:ET

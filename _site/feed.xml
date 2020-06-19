@@ -6,13 +6,55 @@
 </description>
     <link>http://localhost:4000/StackSploit/</link>
     <atom:link href="http://localhost:4000/StackSploit/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Jun 2020 10:43:01 +0100</pubDate>
-    <lastBuildDate>Fri, 19 Jun 2020 10:43:01 +0100</lastBuildDate>
+    <pubDate>Fri, 19 Jun 2020 17:20:47 +0100</pubDate>
+    <lastBuildDate>Fri, 19 Jun 2020 17:20:47 +0100</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
         <title>x86 Assembly</title>
-        <description>&lt;p&gt;Just an example blog, just getting everything prepared.&lt;/p&gt;
+        <description>&lt;h1 id=&quot;overview&quot;&gt;Overview&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Assembly is a human readable form of &lt;a href=&quot;https://en.wikipedia.org/wiki/Machine_code&quot; target=&quot;_blank&quot;&gt;machine code&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Every application is translated into machine code. &lt;br /&gt;
+  Learning assembly will allow us to read any application. &lt;br /&gt;
+  Which will allow us to understand exactly what every application is doing. &lt;br /&gt;
+  When you know assembly, everything is open-sourced! &lt;br /&gt;
+  When something is meant to be closed-sourced: &lt;br /&gt;
+  Finding vulnerabilities becomes surprisingly easy. &lt;br /&gt;
+  When you can essentially read the applications code.&lt;br /&gt;
+  (⊙＿⊙’)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Assembly has two syntaxes.&lt;/p&gt;
+
+    &lt;p&gt;The syntax “Intel” has nothing to do with &lt;a href=&quot;https://en.wikipedia.org/wiki/Intel&quot; target=&quot;_blank&quot;&gt;Intel&lt;/a&gt; the hardware manufacturering company. &lt;br /&gt;
+  The syntax “AT&amp;amp;T” has nothing do with the &lt;a href=&quot;https://en.wikipedia.org/wiki/AT%26T&quot; target=&quot;_blank&quot;&gt;AT&amp;amp;T&lt;/a&gt; phone company. &lt;br /&gt;
+  (These are just simply the names for the 2 available syntaxes). &lt;br /&gt;
+  Another way of looking at this:&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;python2 allows you to output to console using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print &quot;Hello World!&quot;&lt;/code&gt;. &lt;br /&gt;
+python3 allows you to output to console using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print(&quot;Hello World!&quot;)&lt;/code&gt;.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;The python code snippets do the exact same thing, but the syntaxes are different. &lt;br /&gt;
+  Same applies for the assembly syntaxes “Intel” and “AT&amp;amp;T”.&lt;/p&gt;
+
+    &lt;p&gt;Good example: &lt;a href=&quot;https://en.wikipedia.org/wiki/X86_assembly_language#Syntax&quot; target=&quot;_blank&quot;&gt;https://en.wikipedia.org/wiki/X86_assembly_language#Syntax&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;understanding-assembly&quot;&gt;Understanding assembly&lt;/h1&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Assembly has 3 main concepts. &lt;br /&gt;
+Instructions, Registers and the Stack. &lt;br /&gt;
+  I was writing this blog, but I got tired. &lt;br /&gt;
+  I will complete this tomorrow. :)&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <pubDate>Fri, 19 Jun 2020 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/StackSploit/asm/2020/06/19/x86.html</link>
