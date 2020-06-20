@@ -95,3 +95,5 @@ Along with 35 MIPS registers.
 
 ![Table of x86 registers](/assets/images/x86TableRegisters.png)
 [Image source](https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html){:target="_blank"}
+
+# To be continued
