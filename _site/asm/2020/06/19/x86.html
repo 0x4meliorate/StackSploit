@@ -112,57 +112,76 @@ So for the rest of the guide, we are going to be learning x86 assembly. <br />
 <p>Each CPU architecture has their own instruction sets. <br />
 These are operations that allow you to preform tasks. <br />
 So <code class="language-plaintext highlighter-rouge">MOV</code> in x86 assembly <em>“copies data from one location to another”</em>. <br />
-<code class="language-plaintext highlighter-rouge">ADD</code> in x86 assembly means as it implies. Adds one value to another. <em>(1+1)</em> <br />
+<code class="language-plaintext highlighter-rouge">ADD</code> in x86 assembly does as it implies. Adds one value to another. <em>(1+1)</em> <br />
 Reading the instruction sets below: <br />
-Gives you a list of instructions that can be preformed on x86 CPU’s.</p>
-
-<p><a href="https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions" target="_blank">x86 instruction sets</a></p>
+Gives you a list of instructions that can be preformed on x86 CPU’s. <br />
+<a href="https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions" target="_blank">x86 instruction sets</a></p>
 
 <h3 id="registers">Registers</h3>
-<p>So, so far we have gathered that assembly is very specific to the CPU. <br />
+<p>So far we have gathered that assembly is very specific to the CPU. <br />
 Same applies for registers in assembly. <br />
 So what are registers? <br />
 Well, to explain this, we first need to understand the types of registers. <br />
 There are a total of 14 registers in x86 assembly. <br />
-Along with 35 MIPS registers.</p>
+Along with 35 MIPS registers. <br />
+However, we are only going to be looking at the data registers. <br />
+So we stick with the basics for now, so that we don’t over complicate things.</p>
 
-<ul>
-  <li>Data registers: (These store data).
-    <blockquote>
-      <p>32 bit data registers are EAX, EBX, ECX, EDX. <br />
+<p>So what are data registers?</p>
+
+<p>Well, the data registers store data. <br />
+Since storing/reading values in memory, would require that data to be passed over the bus. <br />
+Which would put more load on the CPU. <br />
+By using registers to store data, that doesn’t require the CPU to move data over the bus. <br />
+So by storing small bits of data in the CPU creates a little extra efficiency with speed. <br />
+So lets have a look at some data registers.</p>
+
+<blockquote>
+  <p>32 bit data registers are EAX, EBX, ECX, EDX. <br />
 16 bit data registers are AX, BX, CX, DX. <br />
 8 bit data registers are AL, BL, CL, DL and AH, BH, CH, DH.</p>
-    </blockquote>
+</blockquote>
 
-    <p>8 bit registers use higher and lower parts of AX, BX, CX and DX. <br />
-  <code class="language-plaintext highlighter-rouge">AH</code> - Higher. <br />
-  <code class="language-plaintext highlighter-rouge">AL</code> - Lower.</p>
+<p>8 bit registers use higher and lower parts of AX, BX, CX and DX. <br />
+<code class="language-plaintext highlighter-rouge">AH</code> - Higher. <br />
+<code class="language-plaintext highlighter-rouge">AL</code> - Lower.</p>
 
-    <p>So we know that we can use these data registers to store data. <br />
-  We also know that the <code class="language-plaintext highlighter-rouge">MOV</code> instruction moves data. <br />
-  So this means we now know how to move data into a register. <br />
-  So we can move the value of 1 into EAX like so:</p>
+<p>So we know that we can use these data registers to store data. <br />
+We also know that the <code class="language-plaintext highlighter-rouge">MOV</code> instruction moves data. <br />
+So this means we now know how to move data into a register. <br />
+So we can move the value of 1 into EAX like so:</p>
 
-    <blockquote>
-      <p>MOV EAX, 1</p>
-    </blockquote>
+<blockquote>
+  <p>MOV EAX, 1</p>
+</blockquote>
 
-    <p>An easier way of understanding this is:</p>
+<p>An easier way of understanding this is:</p>
 
-    <blockquote>
-      <p>[INSTRUCTION] [REGISTER], [DATA]</p>
-    </blockquote>
-  </li>
-  <li>Status registers: <em>These store the current status of the processor</em></li>
-  <li>Address registers: <em>These store the address of the instruction</em></li>
-</ul>
+<blockquote>
+  <p>[INSTRUCTION] [REGISTER], [DATA]</p>
+</blockquote>
 
 <p><a href="https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html" target="_blank">List of x86 Registers</a></p>
 
 <p><img src="/assets/images/x86TableRegisters.png" alt="Table of x86 registers" />
 <a href="https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html" target="_blank">Image source</a></p>
 
-<h1 id="to-be-continued">To be continued</h1>
+<p><code class="language-plaintext highlighter-rouge">Watch my YouTube video to skip straight into creating a 'Hello World' application in x86.</code> <br />
+<code class="language-plaintext highlighter-rouge">I would recommend watching the entire video in order to recap on what we have learnt.</code></p>
+
+<p><a href="http://www.youtube.com/watch?v=pogAe3lVfSs" title="x86 Assembly Tutorial"><img src="http://img.youtube.com/vi/pogAe3lVfSs/0.jpg" alt="x86 Assembly Tutorial" /></a></p>
+
+<h3 id="part-2-will-include">Part 2 will include:</h3>
+<p> </p>
+<h5 id="information-about-index-and-pointers">Information about ‘Index and Pointers’.</h5>
+<p> </p>
+<h5 id="information-about-the-stack">Information about ‘The Stack’.</h5>
+<p> </p>
+<h5 id="then-how-we-can-use-what-we-have-learnt-to-create-a-hello-world-application-in-x86-assembly">Then how we can use what we have learnt to create a ‘Hello World’ application in x86 assembly.</h5>
+<p> </p>
+<h5 id="if-you-enjoyed-this-paper-but-would-like-to-give-me-some-advice-for-improvements">If you enjoyed this paper, but would like to give me some advice for improvements.</h5>
+<p> </p>
+<h5 id="message-me-on-twitter-0x4meliorate">Message me on Twitter: @0x4meliorate</h5>
 
   </article>
 

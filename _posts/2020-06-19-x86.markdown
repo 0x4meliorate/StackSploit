@@ -53,42 +53,49 @@ _Scroll down to 'Instruction sets'._
 Each CPU architecture has their own instruction sets. \\
 These are operations that allow you to preform tasks. \\
 So `MOV` in x86 assembly _"copies data from one location to another"_. \\
-`ADD` in x86 assembly means as it implies. Adds one value to another. _(1+1)_ \\
+`ADD` in x86 assembly does as it implies. Adds one value to another. _(1+1)_ \\
 Reading the instruction sets below: \\
-Gives you a list of instructions that can be preformed on x86 CPU's.
-
+Gives you a list of instructions that can be preformed on x86 CPU's. \\
 [x86 instruction sets](https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions){:target="_blank"}
 
 ### Registers
-So, so far we have gathered that assembly is very specific to the CPU. \\
+So far we have gathered that assembly is very specific to the CPU. \\
 Same applies for registers in assembly. \\
 So what are registers? \\
 Well, to explain this, we first need to understand the types of registers. \\
 There are a total of 14 registers in x86 assembly. \\
-Along with 35 MIPS registers.
+Along with 35 MIPS registers. \\
+However, we are only going to be looking at the data registers. \\
+So we stick with the basics for now, so that we don't over complicate things.
 
-* Data registers: (These store data).
+So what are data registers?
+
+Well, the data registers store data. \\
+Since storing/reading values in memory, would require that data to be passed over the bus. \\
+Which would put more load on the CPU. \\
+By using registers to store data, that doesn't require the CPU to move data over the bus. \\
+So by storing small bits of data in the CPU creates a little extra efficiency with speed. \\
+So lets have a look at some data registers.
+
 > 32 bit data registers are EAX, EBX, ECX, EDX. \\
 > 16 bit data registers are AX, BX, CX, DX. \\
 > 8 bit data registers are AL, BL, CL, DL and AH, BH, CH, DH.
 
-    8 bit registers use higher and lower parts of AX, BX, CX and DX. \\
-    `AH` - Higher. \\
-    `AL` - Lower.
+8 bit registers use higher and lower parts of AX, BX, CX and DX. \\
+`AH` - Higher. \\
+`AL` - Lower.
 
-    So we know that we can use these data registers to store data. \\
-    We also know that the `MOV` instruction moves data. \\
-    So this means we now know how to move data into a register. \\
-    So we can move the value of 1 into EAX like so:
+So we know that we can use these data registers to store data. \\
+We also know that the `MOV` instruction moves data. \\
+So this means we now know how to move data into a register. \\
+So we can move the value of 1 into EAX like so:
 
-    > MOV EAX, 1
+> MOV EAX, 1
 
-    An easier way of understanding this is:
+An easier way of understanding this is:
 
-    > [INSTRUCTION] [REGISTER], [DATA]
+> [INSTRUCTION] [REGISTER], [DATA]
 
-* Status registers: _These store the current status of the processor_
-* Address registers: _These store the address of the instruction_ 
 
 [List of x86 Registers](https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html){:target="_blank"}
 
@@ -96,4 +103,19 @@ Along with 35 MIPS registers.
 ![Table of x86 registers](/assets/images/x86TableRegisters.png)
 [Image source](https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html){:target="_blank"}
 
-# To be continued
+`Watch my YouTube video to skip straight into creating a 'Hello World' application in x86.` \\
+`I would recommend watching the entire video in order to recap on what we have learnt.`
+
+[![x86 Assembly Tutorial](http://img.youtube.com/vi/pogAe3lVfSs/0.jpg)](http://www.youtube.com/watch?v=pogAe3lVfSs "x86 Assembly Tutorial")
+
+### Part 2 will include:
+&nbsp;
+##### Information about 'Index and Pointers'.
+&nbsp;
+##### Information about 'The Stack'.
+&nbsp;
+##### Then how we can use what we have learnt to create a 'Hello World' application in x86 assembly.
+&nbsp;
+##### If you enjoyed this paper, but would like to give me some advice for improvements.
+&nbsp;
+##### Message me on Twitter: @0x4meliorate

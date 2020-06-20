@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Jun 2020 13:04:58 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Jun 2020 13:04:58 +0100</lastBuildDate>
+    <pubDate>Sat, 20 Jun 2020 20:00:36 +0100</pubDate>
+    <lastBuildDate>Sat, 20 Jun 2020 20:00:36 +0100</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
@@ -67,57 +67,76 @@ So for the rest of the guide, we are going to be learning x86 assembly. &lt;br /
 &lt;p&gt;Each CPU architecture has their own instruction sets. &lt;br /&gt;
 These are operations that allow you to preform tasks. &lt;br /&gt;
 So &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MOV&lt;/code&gt; in x86 assembly &lt;em&gt;“copies data from one location to another”&lt;/em&gt;. &lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ADD&lt;/code&gt; in x86 assembly means as it implies. Adds one value to another. &lt;em&gt;(1+1)&lt;/em&gt; &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ADD&lt;/code&gt; in x86 assembly does as it implies. Adds one value to another. &lt;em&gt;(1+1)&lt;/em&gt; &lt;br /&gt;
 Reading the instruction sets below: &lt;br /&gt;
-Gives you a list of instructions that can be preformed on x86 CPU’s.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions&quot; target=&quot;_blank&quot;&gt;x86 instruction sets&lt;/a&gt;&lt;/p&gt;
+Gives you a list of instructions that can be preformed on x86 CPU’s. &lt;br /&gt;
+&lt;a href=&quot;https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions&quot; target=&quot;_blank&quot;&gt;x86 instruction sets&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;registers&quot;&gt;Registers&lt;/h3&gt;
-&lt;p&gt;So, so far we have gathered that assembly is very specific to the CPU. &lt;br /&gt;
+&lt;p&gt;So far we have gathered that assembly is very specific to the CPU. &lt;br /&gt;
 Same applies for registers in assembly. &lt;br /&gt;
 So what are registers? &lt;br /&gt;
 Well, to explain this, we first need to understand the types of registers. &lt;br /&gt;
 There are a total of 14 registers in x86 assembly. &lt;br /&gt;
-Along with 35 MIPS registers.&lt;/p&gt;
+Along with 35 MIPS registers. &lt;br /&gt;
+However, we are only going to be looking at the data registers. &lt;br /&gt;
+So we stick with the basics for now, so that we don’t over complicate things.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Data registers: (These store data).
-    &lt;blockquote&gt;
-      &lt;p&gt;32 bit data registers are EAX, EBX, ECX, EDX. &lt;br /&gt;
+&lt;p&gt;So what are data registers?&lt;/p&gt;
+
+&lt;p&gt;Well, the data registers store data. &lt;br /&gt;
+Since storing/reading values in memory, would require that data to be passed over the bus. &lt;br /&gt;
+Which would put more load on the CPU. &lt;br /&gt;
+By using registers to store data, that doesn’t require the CPU to move data over the bus. &lt;br /&gt;
+So by storing small bits of data in the CPU creates a little extra efficiency with speed. &lt;br /&gt;
+So lets have a look at some data registers.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;32 bit data registers are EAX, EBX, ECX, EDX. &lt;br /&gt;
 16 bit data registers are AX, BX, CX, DX. &lt;br /&gt;
 8 bit data registers are AL, BL, CL, DL and AH, BH, CH, DH.&lt;/p&gt;
-    &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 
-    &lt;p&gt;8 bit registers use higher and lower parts of AX, BX, CX and DX. &lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AH&lt;/code&gt; - Higher. &lt;br /&gt;
-  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AL&lt;/code&gt; - Lower.&lt;/p&gt;
+&lt;p&gt;8 bit registers use higher and lower parts of AX, BX, CX and DX. &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AH&lt;/code&gt; - Higher. &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AL&lt;/code&gt; - Lower.&lt;/p&gt;
 
-    &lt;p&gt;So we know that we can use these data registers to store data. &lt;br /&gt;
-  We also know that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MOV&lt;/code&gt; instruction moves data. &lt;br /&gt;
-  So this means we now know how to move data into a register. &lt;br /&gt;
-  So we can move the value of 1 into EAX like so:&lt;/p&gt;
+&lt;p&gt;So we know that we can use these data registers to store data. &lt;br /&gt;
+We also know that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MOV&lt;/code&gt; instruction moves data. &lt;br /&gt;
+So this means we now know how to move data into a register. &lt;br /&gt;
+So we can move the value of 1 into EAX like so:&lt;/p&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;MOV EAX, 1&lt;/p&gt;
-    &lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;MOV EAX, 1&lt;/p&gt;
+&lt;/blockquote&gt;
 
-    &lt;p&gt;An easier way of understanding this is:&lt;/p&gt;
+&lt;p&gt;An easier way of understanding this is:&lt;/p&gt;
 
-    &lt;blockquote&gt;
-      &lt;p&gt;[INSTRUCTION] [REGISTER], [DATA]&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Status registers: &lt;em&gt;These store the current status of the processor&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Address registers: &lt;em&gt;These store the address of the instruction&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;[INSTRUCTION] [REGISTER], [DATA]&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html&quot; target=&quot;_blank&quot;&gt;List of x86 Registers&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/x86TableRegisters.png&quot; alt=&quot;Table of x86 registers&quot; /&gt;
 &lt;a href=&quot;https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html&quot; target=&quot;_blank&quot;&gt;Image source&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;to-be-continued&quot;&gt;To be continued&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Watch my YouTube video to skip straight into creating a 'Hello World' application in x86.&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I would recommend watching the entire video in order to recap on what we have learnt.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=pogAe3lVfSs&quot; title=&quot;x86 Assembly Tutorial&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/pogAe3lVfSs/0.jpg&quot; alt=&quot;x86 Assembly Tutorial&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;part-2-will-include&quot;&gt;Part 2 will include:&lt;/h3&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h5 id=&quot;information-about-index-and-pointers&quot;&gt;Information about ‘Index and Pointers’.&lt;/h5&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h5 id=&quot;information-about-the-stack&quot;&gt;Information about ‘The Stack’.&lt;/h5&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h5 id=&quot;then-how-we-can-use-what-we-have-learnt-to-create-a-hello-world-application-in-x86-assembly&quot;&gt;Then how we can use what we have learnt to create a ‘Hello World’ application in x86 assembly.&lt;/h5&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h5 id=&quot;if-you-enjoyed-this-paper-but-would-like-to-give-me-some-advice-for-improvements&quot;&gt;If you enjoyed this paper, but would like to give me some advice for improvements.&lt;/h5&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h5 id=&quot;message-me-on-twitter-0x4meliorate&quot;&gt;Message me on Twitter: @0x4meliorate&lt;/h5&gt;
 </description>
         <pubDate>Fri, 19 Jun 2020 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/asm/2020/06/19/x86.html</link>
