@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Jun 2020 20:03:04 +0100</pubDate>
-    <lastBuildDate>Fri, 19 Jun 2020 20:03:04 +0100</lastBuildDate>
+    <pubDate>Sat, 20 Jun 2020 09:33:20 +0100</pubDate>
+    <lastBuildDate>Sat, 20 Jun 2020 09:33:20 +0100</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
@@ -46,15 +46,36 @@ python3 allows you to output to console using &lt;code class=&quot;language-plai
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&quot;understanding-assembly&quot;&gt;Understanding assembly&lt;/h1&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Assembly has 3 main concepts. &lt;br /&gt;
-Instructions, Registers and the Stack. &lt;br /&gt;
-  I was writing this blog, but I got tired. &lt;br /&gt;
-  I will complete this tomorrow. :)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;architecures&quot;&gt;Architecures&lt;/h2&gt;
+&lt;p&gt;CPU models use certain architectures. &lt;br /&gt;
+Raspberry Pi’s and Phones use ARM CPU’s. &lt;br /&gt;
+ARM CPU’s are very power efficient, which is why phones use them. &lt;br /&gt;
+Most computers use x64 and x86 CPU’s. &lt;br /&gt;
+x86 have 32 bits, x64 have 64 bits. &lt;br /&gt;
+However, 32 bits go into 64 bits. &lt;br /&gt;
+Meaning, writing x86 assembly, will work on x64 CPU’s. &lt;br /&gt;
+So for the rest of the guide, we are going to be learning x86 assembly. &lt;br /&gt;
+(In the ‘Intel’ syntax).&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Comparison_of_instruction_set_architectures&quot; target=&quot;_blank&quot;&gt;List of architectures&lt;/a&gt; &lt;br /&gt;
+&lt;em&gt;Scroll down to ‘Instruction sets’.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;p&gt;Each CPU architecture has their own instruction sets. &lt;br /&gt;
+These are operations that allow you to preform tasks. &lt;br /&gt;
+So &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MOV&lt;/code&gt; in x86 assembly &lt;em&gt;“copies data from one location to another”&lt;/em&gt;. &lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ADD&lt;/code&gt; in x86 assembly means as it implies. Adds one value to another. &lt;em&gt;(1+1)&lt;/em&gt; &lt;br /&gt;
+Reading the instruction sets below: &lt;br /&gt;
+Gives you a list of instructions that can be preformed on x86 CPU’s.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions&quot; target=&quot;_blank&quot;&gt;x86 instruction sets&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;registers&quot;&gt;Registers&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html&quot; target=&quot;_blank&quot;&gt;x86 Registers&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Jun 2020 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/asm/2020/06/19/x86.html</link>
