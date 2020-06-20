@@ -119,8 +119,31 @@ Gives you a list of instructions that can be preformed on x86 CPU’s.</p>
 <p><a href="https://en.wikipedia.org/wiki/X86_instruction_listings#x86_integer_instructions" target="_blank">x86 instruction sets</a></p>
 
 <h3 id="registers">Registers</h3>
+<p>So, so far we have gathered that assembly is very specific to the CPU. <br />
+Same applies for registers in assembly. <br />
+So what are registers? <br />
+Well, to explain this, we first need to understand the types of registers. <br />
+There are a total of 14 registers in x86 assembly. <br />
+Along with 35 MIPS registers. <br />
+They are put into 3 groups:</p>
+<ul>
+  <li>Data registers: <em>These hold data</em>
+    <blockquote>
+      <p>32 bit data registers are EAX, EBX, ECX, EDX. <br />
+16 bit data registers are AX, BX, CX, DX. <br />
+8 bit data registers are AL, BL, CL, DL and AH, BH, CH, DH.</p>
+    </blockquote>
 
-<p><a href="https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html" target="_blank">x86 Registers</a></p>
+    <p>8 bit registers use higher and lower parts of AX, BX, CX and DX. <br />
+  <code class="language-plaintext highlighter-rouge">AH</code> - Higher. <br />
+  <code class="language-plaintext highlighter-rouge">AL</code> - Lower.</p>
+
+    <p><a href="https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html" target="_blank">List of x86 Registers</a></p>
+  </li>
+  <li>Status registers: <em>These store the current status of the processor</em> \</li>
+  <li>Address registers: <em>These store the address of the instruction</em></li>
+</ul>
+
 
   </article>
 
