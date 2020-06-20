@@ -67,7 +67,7 @@ Well, to explain this, we first need to understand the types of registers. \\
 There are a total of 14 registers in x86 assembly. \\
 Along with 35 MIPS registers. \\
 They are put into 3 groups:
-* Data registers: _These hold data_
+* Data registers: (These store data).
 > 32 bit data registers are EAX, EBX, ECX, EDX. \\
 > 16 bit data registers are AX, BX, CX, DX. \\
 > 8 bit data registers are AL, BL, CL, DL and AH, BH, CH, DH.
@@ -75,9 +75,9 @@ They are put into 3 groups:
     8 bit registers use higher and lower parts of AX, BX, CX and DX. \\
     `AH` - Higher. \\
     `AL` - Lower.
-    
-    [List of x86 Registers](https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html){:target="_blank"}
+
+    ![Table of x86 registers](/assets/images/x86TableRegisters.png)
+    [Source](https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html){:target="_blank"}
 
 * Status registers: _These store the current status of the processor_ \\
 * Address registers: _These store the address of the instruction_
-

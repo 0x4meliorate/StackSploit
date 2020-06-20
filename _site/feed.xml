@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Jun 2020 10:28:50 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Jun 2020 10:28:50 +0100</lastBuildDate>
+    <pubDate>Sat, 20 Jun 2020 11:10:10 +0100</pubDate>
+    <lastBuildDate>Sat, 20 Jun 2020 11:10:10 +0100</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
@@ -82,7 +82,7 @@ There are a total of 14 registers in x86 assembly. &lt;br /&gt;
 Along with 35 MIPS registers. &lt;br /&gt;
 They are put into 3 groups:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Data registers: &lt;em&gt;These hold data&lt;/em&gt;
+  &lt;li&gt;Data registers: (These store data).
     &lt;blockquote&gt;
       &lt;p&gt;32 bit data registers are EAX, EBX, ECX, EDX. &lt;br /&gt;
 16 bit data registers are AX, BX, CX, DX. &lt;br /&gt;
@@ -93,12 +93,12 @@ They are put into 3 groups:&lt;/p&gt;
   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AH&lt;/code&gt; - Higher. &lt;br /&gt;
   &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AL&lt;/code&gt; - Lower.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html&quot; target=&quot;_blank&quot;&gt;List of x86 Registers&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;/assets/images/x86TableRegisters.png&quot; alt=&quot;Table of x86 registers&quot; /&gt;
+  &lt;a href=&quot;https://www.eecg.utoronto.ca/~amza/www.mindsec.com/files/x86regs.html&quot; target=&quot;_blank&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Status registers: &lt;em&gt;These store the current status of the processor&lt;/em&gt; \&lt;/li&gt;
   &lt;li&gt;Address registers: &lt;em&gt;These store the address of the instruction&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Fri, 19 Jun 2020 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/asm/2020/06/19/x86.html</link>
