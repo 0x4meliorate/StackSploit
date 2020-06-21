@@ -106,7 +106,7 @@ An easier way of understanding this is:
 `Watch my YouTube video to skip straight into creating a 'Hello World' application in x86.` \\
 `I would recommend watching the entire video in order to recap on what we have learnt.`
 
-[![x86 Assembly Tutorial](http://img.youtube.com/vi/pogAe3lVfSs/0.jpg)](http://www.youtube.com/watch?v=pogAe3lVfSs "x86 Assembly Tutorial")
+[![x86 Assembly Tutorial](https://img.youtube.com/vi/pogAe3lVfSs/0.jpg)](https://www.youtube.com/watch?v=pogAe3lVfSs "x86 Assembly Tutorial")
 
 ### Part 2 will include:
 &nbsp;

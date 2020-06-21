@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 20 Jun 2020 20:00:36 +0100</pubDate>
-    <lastBuildDate>Sat, 20 Jun 2020 20:00:36 +0100</lastBuildDate>
+    <pubDate>Sun, 21 Jun 2020 10:43:12 +0100</pubDate>
+    <lastBuildDate>Sun, 21 Jun 2020 10:43:12 +0100</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
@@ -124,7 +124,7 @@ So we can move the value of 1 into EAX like so:&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Watch my YouTube video to skip straight into creating a 'Hello World' application in x86.&lt;/code&gt; &lt;br /&gt;
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I would recommend watching the entire video in order to recap on what we have learnt.&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=pogAe3lVfSs&quot; title=&quot;x86 Assembly Tutorial&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/pogAe3lVfSs/0.jpg&quot; alt=&quot;x86 Assembly Tutorial&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pogAe3lVfSs&quot; title=&quot;x86 Assembly Tutorial&quot;&gt;&lt;img src=&quot;https://img.youtube.com/vi/pogAe3lVfSs/0.jpg&quot; alt=&quot;x86 Assembly Tutorial&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;part-2-will-include&quot;&gt;Part 2 will include:&lt;/h3&gt;
 &lt;p&gt; &lt;/p&gt;
